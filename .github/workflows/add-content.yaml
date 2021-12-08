@@ -5,16 +5,9 @@ on:
     types: [opened, edited, reopened]
 
 jobs:
-  create-post:
+  add-content:
     runs-on: ubuntu-latest
     steps:
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.85.0'
-
-      - uses: actions/checkout@v2.3.4
 
       - name: Create content 👨‍💻
         run : |
