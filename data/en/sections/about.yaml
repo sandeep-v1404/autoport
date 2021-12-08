@@ -8,14 +8,14 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Software Developer
 # your company information
 company:
   name: Example Co.
-  url: "https://www.example.com"
+  url: https://www.example.com
 
-# your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+# your resume. this file path should be relative to you static directory
+resume: files/resume.pdf
 
 # a summary about you
 summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
@@ -24,28 +24,28 @@ summary: 'I am a passionate software engineer with x years of working experience
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
-  icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  icon: fas fa-envelope
+  url: example@gmail.com
 
 - name: Github
-  icon: "fab fa-github"
-  url: "https://www.github.com/example"
+  icon: fab fa-github
+  url: https://www.github.com/example
 
 - name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+  icon: fab fa-stack-overflow
+  url: #
 
 - name: LinkedIn
-  icon: "fab fa-linkedin"
-  url: "#"
+  icon: fab fa-linkedin
+  url: #
 
 - name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
+  icon: fab fa-twitter
+  url: #
 
 - name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
+  icon: fab fa-facebook
+  url: #
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
@@ -57,3 +57,4 @@ softSkills:
 - name: Team Work
   percentage: 90
   color: yellow
+
