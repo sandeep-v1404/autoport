@@ -14,7 +14,7 @@ jobs:
       - name: Create content 👨‍💻
         run : | 
           echo "Owner: ${GITHUB_REPOSITORY%/*}"
-          if [ github.event.issue.title = 'Author Info' ]
+          if [ "${{ github.event.issue.title }}" == "Author Info" ];
             then
               mkdir -p data/en
               rm -rf data/en/author.yaml
@@ -24,7 +24,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
           
-          if [ ${{ github.event.issue.title }} == 'About Yourself' ]
+          if [ "${{ github.event.issue.title }}" == "About Yourself" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/about.yaml
@@ -34,7 +34,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
-          if [ ${{ github.event.issue.title }} == 'Your Skills' ]
+          if [ "${{ github.event.issue.title }}" == "Your Skills" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/skills.yaml
@@ -44,7 +44,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
-          if [ ${{ github.event.issue.title }} == 'Your Experiences' ]
+          if [ "${{ github.event.issue.title }}" == "Your Experiences" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/experiences.yaml
@@ -54,7 +54,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
-          if [ ${{ github.event.issue.title }} == 'Your Education' ]
+          if [ "${{ github.event.issue.title }}" == "Your Education" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/education.yaml
@@ -64,7 +64,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
-          if [ ${{ github.event.issue.title }} == 'Your Projects' ]
+          if [ "${{ github.event.issue.title }}" == "Your Projects" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/projects.yaml
@@ -74,7 +74,7 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
-          if [ ${{ github.event.issue.title }} == 'Your Achievements' ]
+          if [ "${{ github.event.issue.title }}" == "Your Achievements" ];
             then
               mkdir -p data/en/sections
               rm -rf data/en/sections/achievements.yaml
@@ -88,12 +88,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         id: auto-commit-action
         with:
-          commit_message: ' Updated Content: ${{ github.event.issue.title }}'
-          commit_options: '--allow-empty'
+          commit_message: " Updated Content: ${{ github.event.issue.title }}"
+          commit_options: "--allow-empty"
           repository: .
-          status_options: '--untracked-files=no'
-          file_pattern: 'data/**/*'
-          push_options: '--force'
+          status_options: "--untracked-files=no"
+          file_pattern: "data/**/*"
+          push_options: "--force"
           skip_dirty_check: true
           skip_fetch: true
           disable_globbing: true
@@ -108,7 +108,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.77.0'
+          hugo-version: "0.77.0"
           extended: true
 
       # build website
