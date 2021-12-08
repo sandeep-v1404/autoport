@@ -18,12 +18,69 @@ jobs:
 
       - name: Create content 👨‍💻
         run : |
-          mkdir -p data/en
-          rm -rf data/en/author.yaml
-          file="data/en/author.yaml"
-          echo "File : $file"
-          touch $file
-          echo "${{ github.event.issue.body }}" >> $file
+
+          if [ github.event.issue.title == 'Author Info' ] then;
+            mkdir -p data/en
+            rm -rf data/en/author.yaml
+            file="data/en/author.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+          
+          if [ github.event.issue.title == 'About Yourself' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/about.yaml
+            file="data/en/sections/about.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+
+          if [ github.event.issue.title == 'Your Skills' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/skills.yaml
+            file="data/en/sections/skills.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+
+          if [ github.event.issue.title == 'Your Experiences' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/experiences.yaml
+            file="data/en/sections/experiences.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+
+          if [ github.event.issue.title == 'Your Education' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/education.yaml
+            file="data/en/sections/education.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+
+          if [ github.event.issue.title == 'Your Projects' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/projects.yaml
+            file="data/en/sections/projects.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
+
+          if [ github.event.issue.title == 'Your Achievements' ] then;
+            mkdir -p data/en/sections
+            rm -rf data/en/sections/achievements.yaml
+            file="data/en/sections/achievements.yaml"
+            echo "File : $file"
+            touch $file
+            echo "${{ github.event.issue.body }}" >> $file
+          fi
 
       - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
