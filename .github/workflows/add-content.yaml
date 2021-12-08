@@ -1,4 +1,4 @@
-name: create-issue-posts 🚀
+name: Add Content 🚀
 
 on:
   issues:
@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - uses: actions/checkout@v2.3.4
       - name: Create content 👨‍💻
         run : |
-
+          echo "Owner: ${GITHUB_REPOSITORY%/*}"
           if [ github.event.issue.title == 'Author Info' ] then;
             mkdir -p data/en
             rm -rf data/en/author.yaml
