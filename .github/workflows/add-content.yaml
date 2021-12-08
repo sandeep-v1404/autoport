@@ -84,6 +84,16 @@ jobs:
               echo "${{ github.event.issue.body }}" >> $file
           fi
 
+          if [ "${{ github.event.issue.title }}" == "Your Accomplishments" ];
+            then
+              mkdir -p data/en
+              rm -rf data/en/sections/accomplishments.yaml
+              file="data/en/sections/accomplishments.yaml"
+              echo "File : $file"
+              touch $file
+              echo "${{ github.event.issue.body }}" >> $file
+          fi
+
       - name: Publish content 🚀
         uses: stefanzweifel/git-auto-commit-action@v4
         id: auto-commit-action

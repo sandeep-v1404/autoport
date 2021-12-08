@@ -1,12 +1,3 @@
----
-name: Add Author Info
-about: Add Details about yourself
-title: Author Info
-labels: ''
-assignees: ''
-
----
-
 # some information about you
 name: John Doe
 nickname: John
@@ -23,5 +14,4 @@ summary:
   - I am a Devops
   - I love servers
   - I work on open-source projects
-  - I love to work with some fun projects
   - I love to work with some fun projects
