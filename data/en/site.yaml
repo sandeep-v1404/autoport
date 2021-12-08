@@ -1,14 +1,8 @@
 # Copyright Notice
-copyright: © 2021 Copyright.
+copyright: © 2020 Copyright.
 
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio and personal blog of John Doe.
-
-# specify the list of custom menus that you want to show in the top navbar.
-# they will be separated by a divider from the main menus.
-# customMenus:
-# - name: Docs
-#   url:
 
 # Specify OpenGraph Headers
 openGraph:
@@ -16,4 +10,4 @@ openGraph:
   type: website
   description: Portfolio and personal blog of John Doe.
   image: images/author/john.png
-  url: https://sandeep-v1404.github.io/autoport
+  url: https://hugo-toha.github.io

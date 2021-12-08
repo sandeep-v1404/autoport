@@ -1,3 +1,12 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
 # your designation
 designation: Software Engineer
 # your company information
@@ -71,11 +80,3 @@ badges:
   name: Hard Working
   percentage: 85
   color: orange
-
-softSkills:
-- name: Leadership
-  percentage: 85
-  color: blue
-- name: Team Work
-  percentage: 90
-  color: yellow

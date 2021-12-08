@@ -41,7 +41,7 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/bg.jpg
+  background: /images/site/background.jpg
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
@@ -52,7 +52,7 @@ params:
 
   # GitHub repo of your site
   gitRepo: https://github.com/sandeep-v1404/sandeep-v1404.github.io/autoport
-  # Default branch of your Git repo
+
   # Configure various features of this theme
   features:
     # Enable and configure portfolio
@@ -80,6 +80,7 @@ params:
   # Show tags under the post title
   enableTags: true
 
+  # Provide footer configuration.
   footer:
     enable: true
     # You can provide your custom footer template using this option.
