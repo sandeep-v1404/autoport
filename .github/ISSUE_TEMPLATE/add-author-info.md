@@ -1,7 +1,7 @@
 ---
 name: Add Author Info
 about: Add Details about yourself
-title: ''
+title: Author
 labels: ''
 assignees: ''
 
