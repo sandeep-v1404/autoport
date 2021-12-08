@@ -3,7 +3,7 @@
 # AutoPort :robot:
 _A Project for making Portfolio using GitHub Actions :octocat:_
 
-A Headless CMS [(Github theme)](https://github.com/MeiK2333/github-style) using [Hugo](https://gohugo.io/), Github Issues and [Github Actions.](https://github.com/features/actions)
+It uses [Toha Theme](https://github.com/hugo-toha/hugo-toha.github.io) provided by [Hugo](https://gohugo.io/) combined with the power of [Github Actions.](https://github.com/features/actions)
 
 
 
