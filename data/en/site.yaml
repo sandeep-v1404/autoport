@@ -3,3 +3,11 @@ copyright: © 2020 Copyright.
 
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio and personal blog of John Doe.
+
+# Specify OpenGraph Headers
+openGraph:
+  title: John's Blog
+  type: website
+  description: Portfolio and personal blog of John Doe.
+  image: images/author/john.png
+  url: https://hugo-toha.github.io
