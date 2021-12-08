@@ -33,7 +33,7 @@ jobs:
           commit_options: '--allow-empty'
           repository: .
           status_options: '--untracked-files=no'
-          file_pattern: 'content/**/*'
+          file_pattern: 'data/**/*'
           push_options: '--force'
           skip_dirty_check: true
           skip_fetch: true
